@@ -1,4 +1,4 @@
-var planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune"];
+var planets = ["mercury", " venus", " earth", " mars", " jupiter", " saturn", " uranus", " neptune"];
 
 /*
  Use the forEach method to add the name of each planet
@@ -8,7 +8,7 @@ var el = document.getElementById("planets");
 let planetDom = "";
 
 planets.forEach(function(element) {
-    planetDom = " " + `<h3>${planets}</h3>`
+    planetDom = `<h3>${planets}</h3>`
     console.log(element);
     el.innerHTML = planetDom;
 })
