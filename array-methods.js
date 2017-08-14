@@ -1,4 +1,4 @@
-var planets = ["mercury", " venus", " earth", " mars", " jupiter", " saturn", " uranus", " neptune"];
+var planets = [" mercury", " venus", " earth", " mars", " jupiter", " saturn", " uranus", " neptune"];
 
 /*
  Use the forEach method to add the name of each planet
@@ -19,7 +19,7 @@ planets.forEach(function(element) {
 
 planets.forEach(function(item) {
 	let plans = item;
-	let capFirst = plans.charAt(0).toUpperCase() + plans.slice(1);
+	let capFirst = plans.charAt(1).toUpperCase() + plans.slice(2);
 	
 	el2.innerHTML += capFirst + " ";
 })
