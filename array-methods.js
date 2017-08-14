@@ -6,6 +6,7 @@ var planets = [" mercury", " venus", " earth", " mars", " jupiter", " saturn", "
 */
 var el = document.getElementById("planets");
 var el2 = document.getElementById("planets2");
+var el3 = document.getElementById("planets3");
 let planetDom = "";
 let planetDom2 = "";
 
@@ -25,6 +26,16 @@ planets.forEach(function(item) {
 })
 
 // Use the filter method to create a new array that contains planets with the letter 'e'
+
+function filterMatches(planets, regexp) {
+    return planets.filter(function (word) {
+         return regexp.test(word);
+    });
+}
+
+newPlanets = filterMatches(planets, /e/);
+
+el3.innerHTML = newPlanets;
 
 // Use the reduce method to create a sentence from the words in the following array
 
