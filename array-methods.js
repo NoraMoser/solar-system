@@ -7,6 +7,8 @@ var planets = [" mercury", " venus", " earth", " mars", " jupiter", " saturn", "
 var el = document.getElementById("planets");
 var el2 = document.getElementById("planets2");
 var el3 = document.getElementById("planets3");
+var el4 = document.getElementById("planets4");
+
 let planetDom = "";
 let planetDom2 = "";
 
@@ -39,4 +41,10 @@ el3.innerHTML = newPlanets;
 
 // Use the reduce method to create a sentence from the words in the following array
 
-// var words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"];
+var words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"];
+
+
+var sentence = words.reduce(function(sum, value){
+    return sum + " " + value;
+    });
+el4.innerHTML += sentence;
